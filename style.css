@@ -1,0 +1,150 @@
+*,
+*::before,
+*::after {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --text-color:#e2faed;
+  --text-color:#e2faedbb;
+  --body-bg: #202124;
+  --quiz-bg:#303136;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  background-color: var(--body-bg);
+  color: var(--text-color);
+  min-height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  font-family: 'Poppins', sans-serif;
+
+  font-size: clamp(1rem, 0.4rem + 0.8vw, 1.6rem);
+  line-height: 1.7;
+  overflow: hidden;
+}
+
+main{
+    background-color:var(--quiz-bg);
+    height:75vh;
+
+}
+
+.quiz{
+    border: 1px solid rgba(233, 221, 221, 0.37);
+    border-radius:10px;
+    height: 100%;
+    width: 100%;
+    padding: 1.3rem;
+
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+
+    position: relative;
+}
+
+:is(.quiz__title,.quiz__instructions){
+    margin-bottom:0.7rem;
+}
+
+.quiz__instructions{
+    font-weight: 300;
+}
+
+
+.tab{
+    padding:clamp(1.38rem, 1rem + 0.8vw, 2rem);
+    padding:20px 5px;
+    display:flex;
+    align-items:center;
+    overflow:hidden;
+   
+}
+
+.tab__btn{
+    --btn-bottom:#585b63;
+
+    background-color: transparent;
+    color: var(--text-color);
+    cursor: pointer;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 550;
+    letter-spacing: .03ch;
+
+    border:none;
+    border-bottom:2px solid var(--btn-bottom);
+    padding:1rem 1.5rem;
+
+    text-transform:uppercase;
+    text-align: center;
+    transition: all 0.2s ;
+   
+}
+
+.tab__btn:hover{
+    transform:scale(1.1);
+    border-bottom-color: deepskyblue;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* smartphones, iPhone, portrait 480x320 phones */ 
+@media (min-width:320px) {
+    main{
+        width:90%;
+    }
+    .tab__btn{
+        font-size:0.8em;
+    }
+}
+
+/* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */ 
+@media (min-width:481px)  {
+    main{
+        width:80%;
+    }
+}
+
+/* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */ 
+@media (min-width:641px) {
+    main{
+        width:70%;
+    }
+}
+
+/* tablet, landscape iPad, lo-res laptops ands desktops */
+@media (min-width:961px){
+    main{
+        width:50%;
+    }
+}
