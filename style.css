@@ -57,9 +57,7 @@ main{
     margin-bottom:0.7rem;
 }
 
-.quiz__instructions{
-    font-weight: 300;
-}
+
 
 
 .tab{
@@ -125,7 +123,7 @@ hr{
 .check{
     display: flex;
     justify-content: flex-end;
-    padding: 10px;
+    /* padding: 10px; */
 }
 
 .check__btn{
@@ -135,6 +133,11 @@ hr{
     color: var(--text-color);
     color:white;
     cursor: pointer;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
+    font-size: 1rem;
+    letter-spacing:2px;
+    margin-top:1.2rem;
     padding:1.2rem;
     text-transform: uppercase;
 }
