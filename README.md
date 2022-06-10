@@ -1,3 +1,3 @@
-# web quiz app
+# TAB COMPONENT
 
 ![demo](./tab.gif)
