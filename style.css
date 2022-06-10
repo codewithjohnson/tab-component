@@ -37,6 +37,7 @@ body {
 
 main{
     background-color:var(--quiz-bg);
+    margin-top:1.3rem;
 }
 
 .quiz{
