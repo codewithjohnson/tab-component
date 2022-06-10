@@ -99,7 +99,8 @@ main{
 
 
 .tab__content{
-    font-size: 0.8em;
+    font-size: 0.9em;
+    font-family: 'Poppins', sans-serif;
     line-height: 1.7;
     margin-bottom:1.5rem;
     transition: all 0.5s ease;
@@ -121,9 +122,22 @@ hr{
 }
 
 
+.check{
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px;
+}
 
+.check__btn{
 
-
+    background-color:rgba(24, 20, 20, 0.418);
+    border-radius: 10px;
+    color: var(--text-color);
+    color:white;
+    cursor: pointer;
+    padding:1.2rem;
+    text-transform: uppercase;
+}
 
 
 
