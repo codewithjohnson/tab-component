@@ -32,7 +32,7 @@ body {
 
   font-size: clamp(1rem, 0.4rem + 0.8vw, 1.6rem);
   line-height: 1.7;
-  /* overflow: hidden; */
+
 }
 
 main{
@@ -158,12 +158,20 @@ hr{
 
 /* smartphones, iPhone, portrait 480x320 phones */ 
 @media (min-width:320px) {
+    body{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
     main{
         width:90%;
     }
+    
     .tab__btn{
         font-size:0.8em;
     }
+
 }
 
 /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */ 
