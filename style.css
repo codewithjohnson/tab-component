@@ -143,6 +143,10 @@ hr{
     text-transform: uppercase;
 }
 
+.check__btn:hover{
+    background-color:#92cce1;
+    color: #303136;
+}
 
 
 
@@ -167,7 +171,7 @@ hr{
     main{
         width:90%;
     }
-    
+
     .tab__btn{
         font-size:0.8em;
     }
