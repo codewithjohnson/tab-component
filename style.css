@@ -32,7 +32,7 @@ body {
 
   font-size: clamp(1rem, 0.4rem + 0.8vw, 1.6rem);
   line-height: 1.7;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 main{
@@ -48,7 +48,7 @@ main{
 
     display: flex;
     flex-direction: column;
-    overflow: hidden;
+    overflow-x: hidden;
 
     position: relative;
 }
@@ -68,7 +68,7 @@ main{
     display:flex;
     align-items:center;
     overflow:hidden;
-    margin-bottom:1.5rem;
+    margin-bottom:1.3rem;
    
 }
 
