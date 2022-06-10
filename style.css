@@ -37,8 +37,6 @@ body {
 
 main{
     background-color:var(--quiz-bg);
-    height:75vh;
-
 }
 
 .quiz{
@@ -70,6 +68,7 @@ main{
     display:flex;
     align-items:center;
     overflow:hidden;
+    margin-bottom:1.5rem;
    
 }
 
@@ -99,6 +98,27 @@ main{
 }
 
 
+.tab__content{
+    font-size: 0.8em;
+    line-height: 1.7;
+    margin-bottom:1.5rem;
+    transition: all 0.5s ease;
+    display:none;
+}
+
+.tab__btn--active{
+    border-bottom-color: deepskyblue;
+}
+
+.tab__content--active{
+    display:block;
+}
+
+
+hr{
+    --line-color: var(--btn-bottom);
+    border: 1px solid rgba(173, 216, 230, 0.699);
+}
 
 
 
